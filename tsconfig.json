@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -19,7 +18,25 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@company/core/*": [
+        "projects/core/*",
+        "projects/core"
+      ],
+      "@company/core": [
+        "dist/core/core",
+        "dist/core"
+      ],
+      "@company/data/*": [
+        "projects/data/*",
+        "projects/data"
+      ],
+      "@company/data": [
+        "dist/data/data",
+        "dist/data"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
